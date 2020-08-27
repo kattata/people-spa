@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>PEOPLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body onhashchange="pageChange()">
+  <!-- tabbar navigation -->
+  <nav class="tabbar">
+    <a href="#home">Home</a>
+    <a href="#family">Family</a>
+    <a href="#teachers">Teachers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- pages -->
+  <!-- home page -->
+  <section id="home" class="page">
+    <header class="topbar">
+      <h2>Home</h2>
+    </header>
+    <p>My Single Page Web App Template</p>
+  </section>
+
+  <!-- family page -->
+  <section id="family" class="page">
+    <header class="topbar">
+      <h2>Family</h2>
+    </header>
+    <div class="options">
+      <input type="search" placeholder="Search" class="searchbar" onkeyup="search(this.value)">
+      <button class="add-btn" onclick="expandAdd()">Add new members</button>
+      <div class="add-fields">
+        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Age" name="age">
+        <input type="text" placeholder="Hair Color" name="hair">
+        <input type="text" placeholder="Relation" name="relation">
+        <input type="text" placeholder="Image URL" name="img">
+        <button id="save-btn" onclick="createMember()">Save</button>
+      </div>
+    </div>
+    <div id="family-members-list" class="grid-container"></div>
+  </section>
+
+  <!-- teachers page -->
+  <section id="teachers" class="page">
+    <header class="topbar">
+      <h2>Teachers</h2>
+    </header>
+    <div id="teachers-list" class="grid-container"></div>
+  </section>
+
+  <!-- contact page -->
+  <section id="contact" class="page">
+    <header class="topbar">
+      <h2>Contact</h2>
+    </header>
+    <a href="https://www.linkedin.com/in/kasia-laniecka-253415188/" target="_blank">
+      <img src="img/kasia.jpg" alt="Kasia Photo" class="profile-pic">
+    </a>
+    <p><a href="mailto:kasia.laniecka@gmail.com">kasia.laniecka@gmail.com</a></p>
+  </section>
+
+  <!-- SPA functionality  -->
+  <script src="js/spa.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
