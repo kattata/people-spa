@@ -7,7 +7,7 @@ let familyMembers = [
         age: 2020 - 2013,
         hairColor: "Ginger",
         relation: "Pet Rabbit",
-        img: "../img/nesia.png"
+        img: "img/nesia.png"
     },
     {
         name: "Kamila",
